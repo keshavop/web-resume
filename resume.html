@@ -1,0 +1,1206 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Keshav Kumar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header > div {
+  line-height: 1.5;
+}
+
+#header > div > div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.section.summary header {
+  margin-top: 1rem;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 1rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #profiles a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #profiles .url .show-only-url-print {
+    display: none;
+  }
+  #profiles .url a::after {
+    content: attr(href);
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company a {
+    color: #40484f;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    border-bottom: 1px solid #fdfdfd;
+    margin: .5em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: ", ";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0;
+    padding: 0;
+  }
+  #skills .level {
+    margin: 0.1rem 0;
+    font-weight: 400;
+  }
+  #skills .keywords {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  .highlights > li > p {
+    margin-bottom: 0.3em;
+  }
+  ul.keywords::before {
+    content: "Skills: ";
+    font-size: 1rem;
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+    font-size: 1rem;
+  }
+  ul.keywords li,
+  ul.courses li {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-location-dot:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Keshav Kumar</h1>
+    			<h2 class="label">Software Engineer</h2>
+    		</div>
+    
+    
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="fa-regular fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:keshavkumar8122@gmail.com">keshavkumar8122@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fa-solid fa-mobile-screen-button"></span>
+    				<a class="hide-href-print" href="tel:+91 7857982609">+91 7857982609</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa-brands fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/keshavop"><span class="show-only-url-print">keshavop</span></a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa-brands fa-portfolio portfolio social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://keshavop.dev"><span class="show-only-url-print">keshavop</span></a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Skills</h2>
+      </header>
+      <section id="skills">
+        <div class="item">
+          <h3 class="name">
+            Programming Languages
+          </h3>
+          <ul class="keywords">
+            <li>C++</li>
+            <li>JAVA</li>
+            <li>Kotlin</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Frameworks &amp; Databases
+          </h3>
+          <ul class="keywords">
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>NextJS</li>
+            <li>TailwindCSS</li>
+            <li>Spring Boot</li>
+            <li>Kafka</li>
+            <li>Redis</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Developer Tools
+          </h3>
+          <ul class="keywords">
+            <li>AWS</li>
+            <li>GCP</li>
+            <li>Docker</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Linux</li>
+            <li>Postman</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Interpersonal Skills
+          </h3>
+          <ul class="keywords">
+            <li>Teamwork</li>
+            <li>Problem-Solving</li>
+            <li>Adaptability</li>
+            <li>Decision-Making</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(1)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Nov 2023</span>
+                <span class="endDate">- Current</span>
+              </div>
+              <div class="position">SDE Backend Intern</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            India
+          </span>
+           <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Tech Stack: Java, Kotlin, Spring Boot, Kafka, PostgreSQL</p></p></li>
+              <li><p><p>Contributed to the development of Loan against Mutual Funds (LAMF) project, gaining valuable experience in lending and mutual funds.</p></p></li>
+              <li><p><p>Worked on the development of Gold V2 API with MMTC as a partner, reduce latency and enhanced user experience in the Gold product.</p></p></li>
+              <li><p><p>Implemented key metrics and made Grafana dashboards for monitoring investment services, and enabled Prometheus based alerting system for proactive issue identification, enhancing service reliability.</p></p></li>
+              <li><p><p>Created OneView internal dashboard for Magic Spends and LAMF to streamline handling of customer support tickets, significantly boosting overall team efficiency by 30%.</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(2)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">CodeSync IDE</div>
+            <div class="date">
+              <span class="startDate">Sep 2023</span>
+              <span class="endDate">- Current</span>
+            </div>
+          </header>
+          <span class="website">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://codesync-ide.vercel.app">https://codesync-ide.vercel.app</a>
+          </span>
+          <ul class="keywords">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Socket.IO</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p><p>Implemented a live chat feature using Socket.IO, enabling users to discuss code, share insights, and brainstorm ideas within the platform.</p></p></li>
+                <li><p><p>Implemented Codemirror to create modern UI like IDE, integrated Rapid API to compile and execute code in popular languages, including C, C++, JAVA, JavaScript, etc.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Employee Navigator</div>
+            <div class="date">
+              <span class="startDate">May 2024</span>
+              <span class="endDate">- Current</span>
+            </div>
+          </header>
+          <span class="website">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://employee-navigator.vercel.app">https://employee-navigator.vercel.app</a>
+          </span>
+          <ul class="keywords">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p><p>Implemented RESTful APIs for employee CRUD operations and used MySQL database Hibernate ORM, enabling efficient data persistence and retrieval.</p></p></li>
+                <li><p><p>Designed and developed user authentication and authorization using JWT authentication token, ensuring secure access to the system.</p></p></li>
+                <li><p><p>Enhanced application logging and monitoring using Spring Boot Actuator and configured deployment using Docker.</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(1)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2020
+              </span>
+              <span class="endDate">
+              - 2024
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor of Technology
+              </div>
+              <div class="area">
+                Computer Science and Engineering
+              </div>
+              <div class="institution">
+                Lovely Professional University
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Awards</h2>
+        </header>
+        <section id="awards">
+            <section class="award-item">
+                <label for="award-item-0"></label>
+    
+              <header class="clear">
+                  <div class="date">
+                    2023
+                  </div>
+                <div class="header-left">
+                    <div class="title">
+                      Leetcode Rating
+                    </div>
+                    <div class="awarder">
+                      Leetcode
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <div class="summary"><p><p>Rated 1430 at Leetcode and solved 500+ problems on Leetcode &amp; Codestudio</p></p></div>
+              </div>
+            </section>
+            <section class="award-item">
+                <label for="award-item-1"></label>
+    
+              <header class="clear">
+                  <div class="date">
+                    2023
+                  </div>
+                <div class="header-left">
+                    <div class="title">
+                      Hacktoberfest Contributor
+                    </div>
+                    <div class="awarder">
+                      Hacktoberfest
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <div class="summary"><p><p>Contributed to Hacktoberfest in 2021, 2022 and 2023</p></p></div>
+              </div>
+            </section>
+            <section class="award-item">
+                <label for="award-item-2"></label>
+    
+              <header class="clear">
+                  <div class="date">
+                    2022
+                  </div>
+                <div class="header-left">
+                    <div class="title">
+                      Google Cloud Programs
+                    </div>
+                    <div class="awarder">
+                      Google
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <div class="summary"><p><p>Participated in Google Cloud Facilitator Program &amp; Google Cloud Ready Program &amp; earned badges</p></p></div>
+              </div>
+            </section>
+            <section class="award-item">
+                <label for="award-item-3"></label>
+    
+              <header class="clear">
+                  <div class="date">
+                    2023
+                  </div>
+                <div class="header-left">
+                    <div class="title">
+                      LinkedIn Recognition
+                    </div>
+                    <div class="awarder">
+                      LinkedIn
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <div class="summary"><p><p>Selected as Top 5% in Web Development Space as a valuable contributor to LinkedIn Blog Space</p></p></div>
+              </div>
+            </section>
+        </section>
+      </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Certificates</h2>
+        </header>
+        <section id="certificates">
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      META Front-end Professional Certification
+                    </div>
+                    <div class="issuer">
+                      META
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      META Back-end Professional Certification
+                    </div>
+                    <div class="issuer">
+                      META
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      Server side JavaScript with Node.js
+                    </div>
+                    <div class="issuer">
+                      NIIT University Coursera
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      Database Management System
+                    </div>
+                    <div class="issuer">
+                      Infosys Springboard
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      DSA Self Placed
+                    </div>
+                    <div class="issuer">
+                      GeeksForGeeks
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+              </div>
+            </section>
+        </section>
+      </section>
+
+  </body>
+</html>
