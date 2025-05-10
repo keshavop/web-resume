@@ -7,8 +7,8 @@ export const resumeData: TResumeSchema = {
   basics: {
     name: "Keshav Kumar",
     label: "Software Engineer",
-    email: "keshavkumar8122@gmail.com",
-    phone: "+91 7857982609",
+    email: "keshavkumarXXXX@gmail.com",
+    phone: "+91 785798XXXX",
     url: "https://keshavop.vercel.app",
     profiles: [
       {
