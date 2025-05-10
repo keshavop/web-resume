@@ -18,7 +18,7 @@
     "typescript",
     "zod"
   ],
-  "author": "Milind Mishra",
+  "author": "Keshav Kumar",
   "license": "MIT",
   "packageManager": "pnpm@10.5.2",
   "dependencies": {
