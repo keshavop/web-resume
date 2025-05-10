@@ -5,9 +5,9 @@
   "basics": {
     "name": "Keshav Kumar",
     "label": "Software Engineer",
-    "email": "keshavkumar8122@gmail.com",
-    "phone": "+91 7857982609",
-    "url": "https://keshavop.dev",
+    "email": "keshavkumar****@gmail.com",
+    "phone": "+91 785798XXXX",
+    "url": "https://keshavop.vercel.app",
     "profiles": [
       {
         "network": "GitHub",
@@ -17,7 +17,7 @@
       {
         "network": "Portfolio",
         "username": "keshavop",
-        "url": "https://keshavop.dev"
+        "url": "https://keshavop.vercel.app"
       }
     ]
   },
