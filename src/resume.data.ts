@@ -108,15 +108,6 @@ export const resumeData: TResumeSchema = {
         "Postman",
         "Figma"
       ],
-    },
-    {
-      name: "Interpersonal Skills",
-      keywords: [
-        "Teamwork",
-        "Problem-Solving",
-        "Adaptability",
-        "Decision-Making"
-      ],
     }
   ],
   projects: [
